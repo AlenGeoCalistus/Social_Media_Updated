@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;600;700;800&family=Nunito:wght@200;300;400;500;700;800;900&display=swap");
+
+.wrappers {
+  font-family: "Raleway", sans-serif;
+  background-image: url("./newBackGround.jpg");
+  object-fit: cover;
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Nunito", sans-serif;
+}

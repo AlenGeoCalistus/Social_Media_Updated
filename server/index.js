@@ -28,7 +28,7 @@ const PORT = process.env.PORT;
 const CONNECTION = process.env.MONGODB_CONNECTION;
 
 mongoose.connect(CONNECTION, () => {
-  console.log("Connected to MongoDB");
+  console.log("Connected to MongoDB",CONNECTION);
 });
 
 app.use("/auth", AuthRoute);

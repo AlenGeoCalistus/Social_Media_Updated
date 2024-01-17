@@ -9,6 +9,7 @@ export const registerUser = async (req, res) => {
   req.body.password = hashedPass;
   const newUser = new UserModel(req.body);
   const { username } = req.body;
+  // console.log('registered user body', req.body);
   try {
     // addition new
     const oldUser = await UserModel.findOne({ username });

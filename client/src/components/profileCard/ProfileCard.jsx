@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import dotenv from "dotenv";
 import {
   CoverImg,
   Divider,
@@ -20,10 +21,13 @@ import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import * as UserApi from "../../redux/api/UserRequests.js";
 
+
+
 function ProfileCard({ location }) {
   const { user } = useSelector((state) => state.authReducer.authData);
   const posts = useSelector((state) => state.postReducer.posts);
   const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER;
+
 
   const [currentUser, setcurrentUser] = useState({});
   const params = useParams();

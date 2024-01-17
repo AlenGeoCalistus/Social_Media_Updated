@@ -18,7 +18,7 @@ function Sponcored() {
   return (
     <>
       <SponcoredContainer p={2} > 
-        <SponcoredText>Sponcored</SponcoredText>
+        <SponcoredText>Sponsored</SponcoredText>
         <AdsImg className="adsImg" src={AdImg} alt="" />
         <Divider
           sx={{ marginBottom: "20px" }}
